@@ -10,6 +10,7 @@ c =(
     "\033[35m",  # Magenta
 )
 
+#main coroutine
 async def makerandom(idx:int,threshold:int =6)-> int:
     print(c[idx + 1] + f"Initiated makerandom({idx}).")
     rn = random.randint(0,10)
@@ -21,7 +22,7 @@ async def makerandom(idx:int,threshold:int =6)-> int:
     return rn
 
 async def main():
-    res = await asyncio.gather(*(makerandom(i,10-i-1)for i in range(3)))
+    res = await asyncio.gather(*(makerandom(i,10-i)for i in range(3)))
     return res
 
 if __name__ == "__main__":

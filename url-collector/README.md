@@ -1,5 +1,5 @@
 <center>
-<h1><b>Web scrapping url collector</b></h1>
+<h1><b>Web url collector</b></h1>
 </center>
 
 ## Introduction
